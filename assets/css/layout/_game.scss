@@ -1,0 +1,30 @@
+
+#hero-game {
+    background-position: top center;
+    background-image: url('../Illustrations_game/Batgame_1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(130vh - 30px);
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 60%; 
+        padding-top: 400px;
+        .titre {
+            // @extend %titre;
+            margin-bottom: 40px;
+            font-weight: bold;
+            font-size: 60px;
+            text-transform: uppercase;
+        }
+    }
+    .fleche {
+        display: block;
+        margin: 0 auto;
+        width: 80px;
+        margin-top: 20rem;
+    }
+}

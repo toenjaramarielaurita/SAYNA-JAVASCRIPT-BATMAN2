@@ -1,0 +1,303 @@
+@import '../component/navbar';
+@import '../component/footer';
+
+#hero {
+    margin-top: -130px;
+    background-position: top center;
+    background-image: url('../Illustrations/Bathome1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(130vh - 30px);
+
+    @-webkit-keyframes fadeInRight {
+        0% {
+            opacity: 0;
+            transform: translateX(-1000px) scale(0.1);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+
+    @keyframes fadeInRight {
+        0% {
+            opacity: 0;
+            transform: translateX(-1000px) scale(0.1);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+    .content {
+        -webkit-animation: fadeInRight 1500ms ease-in-out;
+                animation: fadeInRight 1500ms ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 400px;
+        .titre {
+            // @extend %titre;
+            margin-bottom: 40px;
+        }
+    }
+    .fleche {
+        display: block;
+        margin: 0 auto;
+        width: 80px;
+        margin-top: 20rem;
+    }
+}
+
+#batman-cinema,
+#batman-nemesis,
+#batman-allies,
+#batman-justice-league {
+    margin-top: 40px;
+    .batman-personnage {
+        display: flex;
+        justify-content: space-between;
+        div {
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        .personnage-info {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+    }
+    .titre {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 30px 0;
+    }
+    .description {
+        margin-bottom: 40px;
+        text-align: justify;
+    }
+}
+
+#batman-cinema {
+    margin-top: 250px;
+}
+
+#batman-nemesis {
+    .nemesishead {
+        display: flex;
+        align-items: center;
+        img {
+            width: 20%;
+        }
+    }
+}
+
+/* Design de la partie multimedia */
+
+#multimedia {
+    button {
+        position: relative;
+        top: 155px;
+        background: none;
+    }
+    .right {
+        right: -85%;
+    }
+    .slider-multimedia{
+        display: flex;
+        width: 60%;
+        margin: 40px auto;
+    }
+    .slider-image{
+        width: 100%;
+    }
+    .slider-content{
+        padding: 15px;
+        background-color: #727272;
+        border-radius: 0 20px 20px 0;
+    }
+    p {
+        font-size: 14px;
+    }
+    .yellow{
+        color: $yellow-color;
+    }
+    .image-bande-annonce {
+        text-align: center;
+    }
+}
+
+/* Design de la partie Contact - Formulaire */
+
+#contact {
+    background-color: darkslategray;
+    padding: 70px 0;
+    .form {
+        width: 50%;
+        margin: 0 auto;
+        input[type='email'] {
+            display: block;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            color: rgb(230, 226, 226);
+            width: 100%;
+            border-bottom: 2px solid rgba(120, 120, 120);
+            background-color: transparent;
+            padding: 3px 0;
+        }
+        input[type='radio']{
+            opacity: 0;
+        }
+        input[type='submit']{
+            color: white;
+            display: block;
+            font-size: 25px;
+            font-family: 'rajdhani';
+            width: 230px;
+            margin: 25px auto;
+            padding: 10px;
+            border-color: none;
+            background: linear-gradient(
+                80deg, white, red
+            );
+            box-shadow: $black-color 5px 5px 60px;
+            &:hover {
+                background: linear-gradient(
+                    80deg, red, white
+                );
+                box-shadow: $black-color 5px 5px 60px;
+            }
+        }
+    }
+    h2 {
+        text-align: center;
+        font-size: 32px;
+        font-family: 'rajdhani';
+        margin-bottom: 32px;
+    }
+    .titre {
+        color: #FFF;
+        font-family: 'rajdhani';
+        font-size: 20px;
+        display: block;
+        margin: 28px 0;
+    }
+    .contact-texte {
+        display: inline;
+        margin-top: 25px;
+    }
+    
+    .option {
+        width: 100%;
+    }
+    select {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        font-size: 16px;
+        position: relative;
+        height: 30px;
+        width: 100%;
+        padding-left: 0;
+        padding-bottom: 3px;
+        color: rgb(230, 226, 226);
+        background-color: transparent;
+        box-sizing: border-box;
+        border-width: 1px;
+        border-style: inherit;
+        border-color: inherit;
+        border-radius: inherit;
+        option {
+            background-color: #19587d9d;
+            border-bottom: 2px solid rgba(120, 120, 120);
+        }
+    }
+
+    .news {
+        margin-top: 25px;
+        border-bottom: 2px solid rgba(120, 120, 120);
+    }
+    ::-webkit-input-placeholder{
+        color: rgb(230, 226, 226);
+        font-size: 15px;
+    }
+    
+    ::-moz-placeholder{
+        color: rgb(230, 226, 226);
+        font-size: 15px;
+    }
+    
+    ::-ms-input-placeholder{
+        color: rgb(230, 226, 226);
+        font-size: 15px;
+    }
+    
+    ::placeholder{
+        color: rgb(230, 226, 226);
+        font-size: 15px;
+    }
+    
+    .btn-group{
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .btn-group {
+        label {
+            cursor: pointer;
+            border: 2px solid; 
+            border-color: #19587D;
+            padding: 10px;
+            -o-border-image: linear-gradient(
+             69deg, white, rgb(0, 98, 255)) 1;
+            border-image: linear-gradient(
+             69deg, white, rgb(0, 98, 255)
+            ) 1;        
+            font-size: 20px;
+            &:hover {
+                background: linear-gradient(
+                    80deg, #eddebf, #19587D
+                );
+            }
+        }
+    }
+    .commentaire {
+        color: rgb(213, 208, 208);
+        font-size: 15px;
+        
+    }
+    textarea {
+        height: 20px;
+        width: 100%;
+        padding-left: 3px;
+        color: #FFF;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid rgba(120, 120, 120);
+    }
+}
+
+/* Design de la citation */
+
+#citations {
+    margin-top: 200px;
+    .citation-carte {        
+        margin: 90px;
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .citation-auteur {
+        padding-top: 30px;
+        font-size: 15px;
+        font-family: 'rajdhani';
+    }
+    .guillemet-close {
+        float: right;
+    }
+}

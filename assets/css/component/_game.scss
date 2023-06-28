@@ -1,0 +1,53 @@
+.wrapped {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    h2 {
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    .questions {
+        .nombreDeQuestions {
+            margin: 20px 0;
+        }
+        .card-quizz {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: left;
+            .card-image img {
+                width: 80%;
+            }
+            .question-quizz {
+                margin: 20px 0;
+            }
+            .qcm {
+                background-color: darkgray;
+                margin: 10px;
+                padding: 5px;
+                font-size: 20px;
+            }
+        }
+    }
+    .btn-game {
+        padding: 40px 0;
+        button {
+            background: linear-gradient(
+                143deg,
+                rgb(121, 120, 118, 0.5),
+                rgba(228, 122, 1, 0.6) 80%
+            );
+            &:hover {
+                background: linear-gradient(
+                    143deg,
+                    rgb(121, 120, 118),
+                    rgb(167, 89, 0) 80%
+                );
+            }
+            padding: 15px 30px;
+            color: white;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    }
+}

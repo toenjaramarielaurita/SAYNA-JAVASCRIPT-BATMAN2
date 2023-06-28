@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+@import url('https://fonts.googleapis.com/css?family=Space Grotesk');
+
+@font-face {
+    font-family: "rajdhani";
+    src: url('../fonts/Rajdhani-Regular.ttf');
+}
+
+@font-face {
+    font-family: "space-grotesk";
+    src: url('../fonts/SpaceGrotesk-Regular.ttf');
+}
+
+@import './base/colors';
+@import './base/global';
+@import './layout/index';
+@import './layout/game';
+@import './component/game';
+@import './component/scrollbar';
+@import './component/popupbox';

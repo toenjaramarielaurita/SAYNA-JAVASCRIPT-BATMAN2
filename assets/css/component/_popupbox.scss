@@ -1,0 +1,56 @@
+$color-blue:blue;
+
+.popup-result {
+    background: linear-gradient(
+        143deg,
+        black,
+        #6a4423
+    );
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    position: fixed;
+    top: 250px;
+    left: 400px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 40px black;
+    .box-resultat {
+        padding: 50px;
+        margin: 30px;
+        background-color: transparent;
+        
+        h1 {
+            font-family: 'rajdhani';
+            text-transform: uppercase;
+            text-decoration: solid underline white 2px;
+        }
+
+        p {
+            font-family: 'space-grotesk';
+            font-size: 20px;
+            margin: 50px 0;
+        }
+
+        .btn-quiz {
+            padding: 40px 0;
+            background: linear-gradient(
+                143deg,
+                rgb(121, 120, 118, 0.5),
+                rgba(228, 122, 1, 0.6) 80%
+            );
+            &:hover {
+                background: linear-gradient(
+                    143deg,
+                    rgb(121, 120, 118),
+                    rgb(167, 89, 0) 80%
+                );
+            }
+            padding: 15px 30px;
+            color: white;
+            text-transform: uppercase;
+            cursor: pointer;
+            text-decoration-line: none;
+        }
+    }
+    display: none;
+}

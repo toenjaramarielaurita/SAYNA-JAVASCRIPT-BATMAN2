@@ -1,0 +1,37 @@
+/* Design de la navigation */
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0; 
+    
+    ul {
+        list-style: none;
+        li {
+            display: inline;
+        }
+
+        a {
+            text-decoration-line: none;
+            color: $white-color;
+            font-size: 30px;
+            font-family: 'rajdhani';
+            padding-right: 30px;
+            &:hover {
+                color: $yellow-color;
+            }
+            
+        }
+        .active {
+            text-decoration: underline;  
+            font-weight: bold;
+        }
+    }
+    .logo:hover{
+        -webkit-filter: invert(4%) sepia(98%) saturate(6486%) hue-rotate(356deg) brightness(100%) contrast(107%);
+        filter: invert(4%) sepia(98%) saturate(6486%) hue-rotate(356deg) brightness(100%) contrast(107%);
+        color: var(--yellow-color);
+    }
+}
